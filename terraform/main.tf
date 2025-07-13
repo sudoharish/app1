@@ -5,6 +5,13 @@ terraform {
       version = "6.3.0"
     }
   }
+  
+  backend "s3" {
+    bucket = "harish8010-terraform-state"
+    key    = "terraform/terraform.tfstate"
+    region = "ap-south-1"
+}
+
 }
 
 provider "aws" {
@@ -14,8 +21,3 @@ provider "aws" {
   shared_credentials_files  = ["creds/aws/credentials"]
 }
 
-backend "s3" {
-  bucket = "my-terraform-state"
-  key    = "project/app1.tfstate"
-  region = "ap-south-1"
-}
