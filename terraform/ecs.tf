@@ -1,3 +1,5 @@
+
+
 #cluster
 resource "aws_ecs_cluster" "main" {
   name = "app1-cluster"

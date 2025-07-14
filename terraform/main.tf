@@ -21,3 +21,7 @@ provider "aws" {
   shared_credentials_files  = ["creds/aws/credentials"]
 }
 
+output "alb_dns_name" {
+  description = "The DNS name of the ALB"
+  value       = "http://${aws_lb.app1-lb.dns_name}"
+}
