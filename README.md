@@ -17,7 +17,10 @@ docker build -t sudoharish/api-server:latest .
 
 Running the container locally
 ----------------------------
+````
+cd app
 docker run --rm --name api-server -p 8005:8005 sudoharish/api-server:latest
+```
 
 Deploying APP1 into AWS ECS
 ===========================
