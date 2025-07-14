@@ -4,7 +4,7 @@ APP1: provides your ip with timestamp in json
 Building Container Image
 ========================
 
-CI enbled by default using git workflows push the image to Dockerhub
+CI enbled by default using git workflows, i.e pushing the container image to Dockerhub
 
 
 Manual Container image Build
